@@ -1,6 +1,6 @@
 package Projekt1
 
-object ZAD8 extends  App {
+object Zad8 extends  App {
   def selectListWithOutZero(list:List[Int],result: List[Int], i:Int) : List[Int] = {
   {
     if(i<list.size)

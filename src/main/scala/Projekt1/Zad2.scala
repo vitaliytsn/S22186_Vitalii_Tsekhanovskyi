@@ -1,4 +1,4 @@
-package example
+package Projekt1
 
 object Zad2  extends App{
   def concatenateWithRecurency(list:List[String],result: String, i:Int) : String =

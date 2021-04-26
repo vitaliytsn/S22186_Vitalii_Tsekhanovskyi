@@ -1,4 +1,4 @@
-package example
+package Projekt1
 
 object Zad6 extends  App{
   def tuplePrint(tuple3: Tuple3[String,Int,Double]): Unit ={

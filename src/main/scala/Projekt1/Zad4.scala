@@ -1,4 +1,4 @@
-package example
+package Projekt1
 
 object Zad4 extends  App {
   def op(total: String, cur: String) = total + cur

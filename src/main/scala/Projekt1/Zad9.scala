@@ -1,4 +1,4 @@
-package example
+package Projekt1
 
 object Zad9 extends App {
   val rawList = List(1,2,0,3,4)

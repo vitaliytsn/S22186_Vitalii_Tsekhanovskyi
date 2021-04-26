@@ -1,4 +1,4 @@
-package example
+package Projekt1
 
 object Zad10 extends  App{
   def FilterModulo(list :List[Double]):List[Double] = {

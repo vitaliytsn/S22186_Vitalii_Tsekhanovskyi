@@ -1,4 +1,4 @@
-package example
+package Projekt1
 
 object Zad1 extends App{
 

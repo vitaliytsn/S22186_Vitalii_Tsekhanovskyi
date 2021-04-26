@@ -1,4 +1,4 @@
-package example
+package Projekt1
 
 object Zad5 extends  App {
   var sklepikPromocja = scala.collection.mutable.Map[String, Double]()

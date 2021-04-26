@@ -1,4 +1,4 @@
-package example
+package Projekt1
 
 object CommonData {
   val dayList = List("Poniedziałek","Wtorek","Sroda","Czwartek","Piątek","Sobota","Niedziela")

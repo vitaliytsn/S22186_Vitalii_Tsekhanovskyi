@@ -1,0 +1,22 @@
+[
+  {
+    "_id": {"$oid": "608ed83c15b12b6085e906e9"},
+    "location": {
+      "city": "Moskwa",
+      "address": {
+        "streetname": "Goodland",
+        "streetnumber": "84"
+      }
+    }
+  },
+  {
+    "_id": {"$oid": "608ed83d15b12b6085e918c5"},
+    "location": {
+      "city": "Moskwa",
+      "address": {
+        "streetname": "Twin Pines",
+        "streetnumber": "32651"
+      }
+    }
+  }
+]

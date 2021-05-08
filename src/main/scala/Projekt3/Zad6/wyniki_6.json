@@ -1,0 +1,14 @@
+[
+  {
+    "_id": {"$oid": "608fa1625aae955ff9d6761f"},
+    "birth_date": "1997-10-14",
+    "email": "vitaliytsn@gmail.com",
+    "first_name": "Vitalii",
+    "height": 183,
+    "job": ".Net fullStack developer",
+    "last_name": "Tsekhanovskyi",
+    "nationality": "Ukrainian",
+    "sex": "Male",
+    "weight": "73"
+  }
+]

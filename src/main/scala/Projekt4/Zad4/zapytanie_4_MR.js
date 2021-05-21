@@ -12,9 +12,17 @@ var reduceFun1 = function(nationality, values){
         if(BMI<minBMI)minBMI = BMI;
         avgBMI+=BMI;
     });
-    avgBMI=avgBMI/values.length;
-    return [minBMI,maxBMI,avgBMI];
+	var resultObj = {
+      MinBMI: minBMI,
+      MaxBMI: maxBMI,
+	  AvgBMI: avgBMI,
+	  Count : values.length
+    };
+    return resultObj;
 };
-db.people.mapReduce(mapFun1,reduceFun1,{out:"reduceTable"})
+var  finalizeFun1 = function(valuty, resultObj){
+    return [resultObj.MinBMI,resultObj.MaxBMI,resultObj.AvgBMI/resultObj.Count];
+};
+db.people.mapReduce(mapFun1,reduceFun1,{out:"reduceTable",finalize:finalizeFun1})
 
 db.reduceTable.find()

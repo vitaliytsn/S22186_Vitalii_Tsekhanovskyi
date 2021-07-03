@@ -1,0 +1,9 @@
+1)MATCH (all:Movie) RETURN all.title
+2)MATCH (tom:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(MOVIES) RETURN MOVIES
+3)MATCH (tom:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(m)<-[:DIRECTED]-(directors) RETURN directors.name
+4)MATCH (tom:Person {name:"Hugo Weaving"})-[:ACTED_IN]->(m)<-[:ACTED_IN]-(coActors) RETURN coActors.name
+5)MATCH (MATRIX {title: "The Matrix"})<-[:ACTED_IN]-(actors)-[:ACTED_IN]->(MOVIES) RETURN MOVIES
+6)MATCH (p:Person)-[:ACTED_IN]->(m:Movie)
+RETURN p.name as actor, count(m.title) AS `movies count`
+7)MATCH (film:Movie) <-[:DIRECTED]-(directors)  Match(film)<-[:PRODUCED]-(producers) return film.title, directors.name, producers.name
+8)MATCH (films:Movie)<-[:ACTED_IN]->(m) Where m.name= "Hugo Weaving" MATCH (films)<-[:ACTED_IN]->(n) where n.name = "Keanu Reeves"  RETURN films.title

@@ -1,0 +1,9 @@
+1)curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Vitalii", "nickname": "vitaliytsn", "age": 23, "isBroke": true}' http://localhost:8098/buckets/s22186/keys/vitaliytsn
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Markek", "nickname": "kowalski", "age": 29, "isBroke": false}' http://localhost:8098/buckets/s22186/keys/kowalski
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Lubomir", "nickname": "poltawa", "age": 28, "isBroke": false}' http://localhost:8098/buckets/s22186/keys/poltawa
+2)curl -i -XGET  http://localhost:8098/buckets/s22186/keys/vitaliytsn
+3)curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Vitalii", "nickname": "vitaliytsn", "age": 23, "isBroke": false, "HaveEnough": true}' http://localhost:8098/buckets/s22186/keys/vitaliytsn
+4)curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Vitalii", "nickname": "vitaliytsn", "age": 25}' http://localhost:8098/buckets/s22186/keys/vitaliytsn
+5)curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Markek", "nickname": "kowalski", "age": 80, "isBroke": false}' http://localhost:8098/buckets/s22186/keys/kowalski
+6)curl -i -XDELETE http://localhost:8098/buckets/s22186/keys/poltawa
+7)curl -i -XGET  http://localhost:8098/buckets/s22186/keys/nieMa

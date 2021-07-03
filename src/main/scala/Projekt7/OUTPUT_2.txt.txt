@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvle14UuBCCUy5rEyPLgYcosvCwA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s22186>; rel="up"
+Last-Modified: Sat, 03 Jul 2021 12:19:44 GMT
+ETag: "1ZpWAsXDY1RIU5LGzJZ7QI"
+Date: Sat, 03 Jul 2021 12:29:36 GMT
+Content-Type: application/json
+Content-Length: 7
+
+'{"name": Vitalii"nickname": "vitaliytsn", "age": 23, "isBroke": true}'
